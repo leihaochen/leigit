@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    <RelativeLayout
+        android:id="@+id/rl_secondUse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="183dp" >
+        <ImageView
+            android:id="@+id/iv_secondIco"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/ic_launcher" 
+            />
+        <TextView
+            android:id="@+id/tv_SecondPackName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_secondName"
+            android:text="第二个应用包名" />
+        <TextView
+            android:id="@+id/tv_secondName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/iv_secondIco"
+            android:text="第二个应用" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_firstUse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_secondUse"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentLeft="true" >
+        <ImageView
+            android:id="@+id/iv_firstIco"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/ic_launcher" />
+        <TextView
+            android:id="@+id/tv_firstUseHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/iv_firstIco"
+            android:text="第一个应用" />
+        <TextView
+            android:id="@+id/tv_firstPackageHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@+id/tv_firstUseHint"
+            android:text="第一个应用包名" />
+    </RelativeLayout>
+</RelativeLayout>
